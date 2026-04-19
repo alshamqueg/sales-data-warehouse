@@ -49,3 +49,11 @@ GROUP BY r.RegionName;
 ### Detailed Schema
 ![Detailed Schema](schema-detailed.png)
 sample_data.sql
+## Files Included
+- [Schema](schema.sql)
+- [Sample Data](sample_data.sql)
+- [Queries](queries.sql)
+## How to Run
+1. Run schema.sql
+2. Run sample_data.sql
+3. Run queries.sql
