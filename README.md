@@ -48,3 +48,4 @@ GROUP BY r.RegionName;
 
 ### Detailed Schema
 ![Detailed Schema](schema-detailed.png)
+sample_data.sql
