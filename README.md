@@ -35,3 +35,16 @@ SELECT r.RegionName, SUM(f.SalesAmount) AS TotalSales
 FROM DWDAYSALESFACT f
 JOIN DWREGION r ON f.RegionKey = r.RegionKey
 GROUP BY r.RegionName;
+## System Diagrams
+
+### Star Schema
+![Star Schema](star-schema.png)
+
+### Data Flow Diagram
+![Data Flow](data-flow.png)
+
+### System Architecture
+![Architecture](architecture.png)
+
+### Detailed Schema
+![Detailed Schema](schema-detailed.png)
