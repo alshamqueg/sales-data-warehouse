@@ -24,10 +24,11 @@ The warehouse includes:
 - DWTIME
 
 ## Implementation
-The system is implemented using SQL scripts to:
+The system is implemented using SQL scripts and follows a star schema design with enforced relationships between fact and dimension tables
 - Create tables
 - Load data
 - Perform analytical queries
+- Enforces referential integrity using foreign key constraints
 
 ## Sample Query
 ```sql
@@ -50,9 +51,18 @@ GROUP BY r.RegionName;
 ![Detailed Schema](schema-detailed.png)
 
 ## Files Included
-- [Schema](schema.sql)
-- [Sample Data](sample_data.sql)
-- [Queries](queries.sql)
+- [Schema](schema.sql) – Creates the data warehouse tables (fact and dimension tables)
+- [Sample Data](sample_data.sql) – Inserts sample records into the tables
+- [Queries](queries.sql) – Contains analytical queries for reporting and insights
+
+### Diagrams
+- Star Schema Diagram (`star-schema.png`)
+- Data Flow Diagram (`data-flow.png`)
+- System Architecture (`architecture.png`)
+- Detailed Schema (`schema-detailed.png`)
+
+### Documentation
+- Project Design Document (`project desing doc.docx`)
 
 ## How to Run
 1. Run schema.sql
